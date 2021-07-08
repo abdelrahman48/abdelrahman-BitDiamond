@@ -1,0 +1,35 @@
+-
+    let appsArr =
+            [
+                {
+                    title: 'Website',
+                    link: 'btdmd.com',
+                    text: 'Access every part of the BitDiamond Universe',
+                    status: 'LIVE'
+                },
+
+                {
+                    title: 'Merch',
+                    link: 'merch.btdmd.com',
+                    text: 'Load up on BitDiamond gear for you and your whole family',
+                    status: 'LIVE'
+                },
+
+                {
+                    title: 'Blog',
+                    link: 'blog.btdmd.com',
+                    text: 'Keep up  with the latest developments',
+                    status: 'LIVE'
+                }
+            ];
+section.apps
+    h3 WEB APPS
+    .apps__container
+
+        each appElm in appsArr
+            .app
+                h4=appElm.title
+                p=appElm.link
+                p=appElm.text
+                span.status=appElm.status
+

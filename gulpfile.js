@@ -1,15 +1,15 @@
-var { src, dest, watch, parallel, series } = require('gulp');
+let { src, dest, watch, parallel, series } = require('gulp');
 
 // html related plugins
-var pug = require('gulp-pug');
+let pug = require('gulp-pug');
 
 // CSS related plugins
-var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
-var postcss = require('gulp-postcss');
-var uncss = require('postcss-uncss');
-var cssnano = require('gulp-cssnano');
-var plugins = [
+let sass = require('gulp-sass');
+let autoprefixer = require('gulp-autoprefixer');
+let postcss = require('gulp-postcss');
+let uncss = require('postcss-uncss');
+let cssnano = require('gulp-cssnano');
+let plugins = [
     uncss({
         html: ['build/index.html'],
         ignore : [/\.active/, /\.lazyload/],
@@ -18,16 +18,16 @@ var plugins = [
 ];
 
 // JS related plugins
-var uglify = require('gulp-uglify');
+let uglify = require('gulp-uglify');
 
 // Utility plugins
-var rename = require('gulp-rename');
-var sourcemaps = require('gulp-sourcemaps');
-var concat = require('gulp-concat');
-var imagemin = require('gulp-imagemin');
+let rename = require('gulp-rename');
+let sourcemaps = require('gulp-sourcemaps');
+let concat = require('gulp-concat');
+let imagemin = require('gulp-imagemin');
 
 // Local server related plugins
-var connect = require('gulp-connect');
+let connect = require('gulp-connect');
 
 async function html() {
     return src('src/pug/index.pug')

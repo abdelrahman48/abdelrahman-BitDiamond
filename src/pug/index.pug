@@ -6,7 +6,59 @@ html(lang="en")
         include header
         include menu
 
+        // Start Hero Section
+        section.hero
+            .info
+                h1 BitDiam
+                    svg(width='98' height='97' viewbox='0 0 98 97' fill='none' xmlns='http://www.w3.org/2000/svg')
+                        path(d='M97.4435 48.5603C97.4435 61.4072 92.3514 73.7279 83.2873 82.812C74.2232 91.8961 61.9297 96.9995 49.1112 96.9995C36.2926 96.9995 23.9991 91.8961 14.935 82.812C5.87096 73.7279 0.778808 61.4072 0.778809 48.5603C0.778809 35.7134 5.87096 23.3927 14.935 14.3086C23.9991 5.2245 36.2926 0.121094 49.1112 0.121094C61.9297 0.121094 74.2232 5.2245 83.2873 14.3086C92.3514 23.3927 97.4435 35.7134 97.4435 48.5603Z' fill='#F7931A')
+                        path(d='M96.1357 48.327C96.1357 60.796 91.1933 72.7544 82.3958 81.5713C73.5983 90.3882 61.6664 95.3415 49.2248 95.3415C36.7833 95.3415 24.8513 90.3882 16.0538 81.5713C7.25635 72.7544 2.31397 60.796 2.31396 48.327C2.31396 35.858 7.25634 23.8997 16.0538 15.0827C24.8513 6.2658 36.7833 1.3125 49.2248 1.3125C61.6664 1.3125 73.5983 6.2658 82.3958 15.0827C91.1933 23.8997 96.1357 35.858 96.1357 48.327Z' fill='white')
+                        path(d='M94.5688 48.1293C94.5688 60.189 89.7887 71.7547 81.28 80.2822C72.7714 88.8097 61.2311 93.6004 49.198 93.6004C37.1649 93.6004 25.6246 88.8097 17.116 80.2822C8.60728 71.7547 3.82715 60.189 3.82715 48.1293C3.82715 36.0696 8.60728 24.5039 17.116 15.9764C25.6246 7.4489 37.1649 2.6582 49.198 2.6582C55.1562 2.6582 61.056 3.83435 66.5607 6.11949C72.0653 8.40462 77.067 11.754 81.28 15.9764C85.4931 20.1988 88.8351 25.2115 91.1152 30.7283C93.3953 36.2451 94.5688 42.158 94.5688 48.1293Z' fill='#F7931A')
+                        path(fill-rule='evenodd' clip-rule='evenodd' d='M58.9357 30.7871L40.0002 30.7786L49.4753 14.3481L58.9357 30.7871Z' fill='white')
+                        path(fill-rule='evenodd' clip-rule='evenodd' d='M39.0616 30.7803L20.1262 30.7717L29.6012 14.3412L39.0616 30.7803Z' fill='white')
+                        path(fill-rule='evenodd' clip-rule='evenodd' d='M79.2779 30.7939L60.3425 30.7854L69.8176 14.3549L79.2779 30.7939Z' fill='white')
+                        path(fill-rule='evenodd' clip-rule='evenodd' d='M50.1049 14.3406L69.0403 14.3723L59.5452 30.7912L50.1049 14.3406Z' fill='white')
+                        path(fill-rule='evenodd' clip-rule='evenodd' d='M30.0707 14.3396L49.0061 14.3713L39.511 30.7902L30.0707 14.3396Z' fill='white')
+                        path(fill-rule='evenodd' clip-rule='evenodd' d='M39.9999 31.7185L58.9353 31.8303L49.4402 89.6037L39.9999 31.7185Z' fill='white')
+                        path(fill-rule='evenodd' clip-rule='evenodd' d='M60.3426 31.7283L79.2404 31.84L50.277 89.6134L60.3426 31.7283Z' fill='white')
+                        path(fill-rule='evenodd' clip-rule='evenodd' d='M38.5929 31.7186L19.6952 31.8303L48.6584 89.6037L38.5929 31.7186Z' fill='white')
+
+                    | nd
+                p Revolutionary ecosystem of tokens and dapps on Binance Smart Chain
+                .btn Connect
+            .img
+                img(src='img/Hero.png' alt='Date Flow' width='717' height='568')
+        // End Hero Section
+
+        // Start Mission Section
+        section.missions
+            h2 BitDiamond mission
+            .missions__container
+                .mission
+                    h3 Engage
+                    p Deliver innovative and engaging applications
+                .mission
+                    h3 Expand
+                    p Broaden the reach of BitDiamond, adding dapps and tokens
+                .mission
+                    h3 Educate
+                    p Explain the less understood aspects of crypto and decentralised finance
+        // End Mission Section
+
+        // Start About Section
+        section.about
+            .img
+                img(src='img/About.png' alt='' width='740px' height='664px')
+            .info
+                h2 About BitDiamond
+                p The BitDiamond team is development led. We are a team of builders and will keep expanding the reach of our platform. Our ecosystem currently encompasses one BEP-20 token, nine BEP-721 NFTs, three dapps, our website, merch store and blog. And we have more in the pipeline.
+                p Please take some time to explore our ecosystem, and also engage with our community on telegram, twitter and discord. It’s great to have you here with us. If you have any questions please reach out, we are always happy to talk.
+
+        // End About Section
+
+        include tokens
+        include dapps
+        include apps
 
         include footer
-
         include scripts

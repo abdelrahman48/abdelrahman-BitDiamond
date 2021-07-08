@@ -1,0 +1,82 @@
+-
+    let tokensLeftArr =
+            [
+                {
+                    title:'BitDiamond BTDMD',
+                    text1: 'Our main diamond and platform utility token.',
+                    text2: 'Non-custodial staking: a 4% tax is taken from all trasactions and distribu ted to holders. Hold Bit Diamond to get benefits across our Platform.Stake BitDiamondto sncrease those benefits.',
+                    text3: 'A BEP-20 token on Binance Smart Chain',
+                    status: 'LIVE'
+                },
+
+                {
+                    title:'BitDiamond Community',
+                    text1: 'A Collection of seven NFTs issued to our supporters andcommunity members. These tokens respesent both rankin our community and also deliver benefits across the platform.',
+                    text2: 'A collection of BEP-721 NFTs on Binance Smart Chain',
+                    status: 'LIVE'
+                },
+
+                {
+                    title: 'BitDiamond Treasure BTDTRS',
+                    text1: 'Unigue NFTs minted in our TreasureHunt game. Collect all nine Ultimate NFTs to claim the treasure hunt grand prize, 1 000 000 BTDMD. Bounty prizes to be won every day.',
+                    text2: 'A BEP-721 NFT on Binance Smart Chain',
+                    status: 'LIVE'
+                },
+                {
+                    title: 'BitDiamondART BTDART',
+                    text1: 'Our very own NFT for people tu use in minting their own works of art. Minting yuor own NFTs on BitDiamond is completely free, all you pay the gas.',
+                    text2: 'A BEP-721 NFTs on Binance Smart Chain',
+                    status: 'LIVE'
+                }];
+    let tokensRightArr =
+            [
+                {
+                    title: 'BitDiamondClime BTDCLM',
+                    text1: 'A very special token indeed! You can only mint a claim token when you are eligible for a grand prize, like',
+                    text2: 'BitDiamondTrove. This token confirms your claime in the best way possible - in the immutable blockchain!',
+                    text3: 'A BEP-721 NFT on Binance Smart Chain',
+                    status: 'LIVE'
+                },
+                {
+                    title: 'BitDiamondBounty BTDBNT',
+                    text1: 'These tokens control the daily bounty prizes offered in our treasure hunt game.',
+                    text2: 'If you have a truasure token that matches you are able to clime your prize through our fully avtonomous Bounty dapp.',
+                    text3: 'A BEP-721 NFTs on Binance Smart Chain',
+                    status: 'LIVE'
+                },
+                {
+                    title: 'BitDiamondTrove BTDTRV',
+                    text1: 'These tokens control the Trove, our grand prize for the treasure hunt blockchain game. If you have a treasure tokens that matches you are to submit a claim for the Trove.',
+                    text2: 'A BEP-20 NFT on Binance Smart Chain',
+                    status: 'LIVE'
+                },
+                {
+                    title: 'BitDiamondRewards',
+                    text1: 'Periodic standalone NFT rewards like the genesls token BTDGEN.',
+                    text2: 'A BEP-721 NFT on Binance Smart Chain',
+                    status: 'LIVE'
+                }
+            ];
+section.tokens
+    h2 BitDiamond Universe
+    h3 Tokens
+    .tokens__container
+        .tokens__left
+
+            each tokenElm in tokensLeftArr
+                .token
+                    h4=tokenElm.title
+                    p=tokenElm.text1
+                    p=tokenElm.text2
+                    if tokenElm.text3
+                        p=tokenElm.text3
+                    .status= tokenElm.status
+        .tokens__right
+            each tokenElm in tokensRightArr
+                .token
+                    h4=tokenElm.title
+                    p=tokenElm.text1
+                    p=tokenElm.text2
+                    if tokenElm.text3
+                        p=tokenElm.text3
+                    .status=tokenElm.status

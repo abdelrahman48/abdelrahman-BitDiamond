@@ -1,0 +1,54 @@
+-
+    let dappsArr =
+            [
+                {
+                    title: 'Theasure',
+                    text1: 'Take  part in the BitDiamond TreasureHunt. Mint unique NFTs with castom made art. Each NFT will have set of characteristics withs over 12 000 possible combinations. Match an item in today s bounty for an instant BNB prize.',
+                    status: 'UNDER DEVELOPMENT',
+                    statusColor: 'blue'
+                },
+
+                {
+                    title: 'Bounty',
+                    text1: 'Match an item in your treasure bax to a bounty item to win an instant BNB prize. There will be five bounty items every day, check daily for your chance to win.',
+                    status: 'UNDER DEVELOPMENT',
+                    statusColor: 'blue'
+                },
+
+                {
+                    title: 'Staking',
+                    text1: 'Stake your BitDiamond in the mine to earn increased benefits on the platforms.',
+                    status: 'COMING SOON',
+                    statusColor: 'purple'
+                },
+
+                {
+                    title: 'Trove',
+                    text1: 'Match all the items in the Trove to win our grand prize. If you have all nine Ultimate BitDiamonds submit your claim!',
+                    status: 'UNDER DEVELOPMENT',
+                    statusColor: 'blue'
+                },
+
+                {
+                    title: 'Gems',
+                    text1: 'Mint your own NFTs and view any NFTs you already own, including community tokens, rewards and treasure items.',
+                    status: 'LAUNCHED SOON',
+                    statusColor: 'purple'
+                },
+
+                {
+                    title: 'MarketPlace',
+                    text1: 'Put your own NFTs up for sale, trade items with other embers ( useful if you are looking to claime the Trove ) and also purchasepower ups for use in the Treasure dapp.',
+                    status: 'COMING SOON',
+                    statusColor: 'purple'
+                }
+            ];
+section.dapps
+    h3 DAPPS
+    .dapps__container
+
+        each dappElm in dappsArr
+            .dapp
+                h4=dappElm.title
+                p=dappElm.text1
+                div(class=dappElm.statusColor).status=dappElm.status
