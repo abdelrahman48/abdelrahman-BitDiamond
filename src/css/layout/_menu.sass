@@ -1,0 +1,88 @@
+.nav__close
+  transform: translateX(-250px)
+  .arrow__left
+    transform: rotate(180deg)
+    width: 38px
+    height: 38px
+    right: -20px
+    svg
+      width: 17px
+      height: 17px
+  .arrow__down
+    display: none
+  li
+    text-align: right
+  .menu__item
+    width: auto
+    border-radius: 10px
+    position: relative
+    right: 24px
+  .menu__text
+    display: none
+  ul.open
+    display: none
+nav
+  position: fixed
+  top: 98px
+  left: 0
+  width: 350px
+  height: 100%
+  padding: 29px 0 50px 50px
+  background: linear-gradient(180.48deg, rgba(115, 70, 215, 0.74) -26.15%, rgba(147, 69, 139, 0) 189.84%)
+  border-radius: 0 10px 10px 0
+  transition: transform .2s ease-in-out
+  z-index: 1
+  .arrow__left
+    position: absolute
+    top: 34%
+    right: -24px
+    width: 48px
+    height: 48px
+    border-radius: 50%
+    background-color: $secondPurpleColor
+    z-index: 5
+    cursor: pointer
+    transition: transform .2s ease-in-out
+    svg
+      position: relative
+      top: 11px
+      left: 10px
+  ul
+    list-style: none
+  li
+    position: relative
+    .active
+      background-color: $thirdBlackBg
+      color: $secondGreenColor
+      svg
+        stroke: $blueColor
+    a
+      @include montserrat__M
+      font-size: 14px
+      color: $whiteColor
+      padding: 6px 0 9px 9px
+      margin: 1.5px 0
+      display: inline-block
+      width: 100%
+      border-radius: 10px 0 0 10px
+      transition: background-color .1s ease-in-out, color .1s ease-in-out
+      &:hover
+        background-color: $thirdBlackBg
+        color: $secondGreenColor
+        svg
+          stroke: $blueColor
+      svg
+        transition: stroke .2s ease
+      .icon
+        margin-right: 15px
+        position: relative
+        top: 4px
+    ul
+      display: none
+    .open
+      display: block
+  .arrow__down
+      position: absolute
+      top: 16px
+      right: 38px
+      cursor: pointer
